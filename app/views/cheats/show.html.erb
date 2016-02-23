@@ -1,0 +1,8 @@
+<div class="card">
+<h1> <%= @cheat.title %></h1>
+<h2> <%= @cheat.content %> </h2>
+
+<a href="/cheats">Back to home</a>
+<a href="/cheats/<%=@cheat.id%>/edit">Edit this cheat</a>
+<%= link_to "Delete this cheat", @cheat, :method => :delete %>
+</div>

@@ -1,0 +1,7 @@
+<div class="card">
+  <h3> <%=@game.title %> Your Current Game</h3>
+
+<a href="/games">Back to home</a>
+<a href="/games/<%=@game.id %>/edit">Edit this game</a>
+<%= link_to "Delete this game", @game, :method => :delete %>
+</div>

@@ -1,0 +1,10 @@
+<h1> Cheat Codes</h1>
+<p><a href="/cheats/new">Add a new cheat</a></p>
+
+<h2> Here are all your current cheat codes</h2>
+  <% @cheats.each do |cheat| %>
+  <p><%=cheat.title%></p><br>
+  <a href="/cheats/<%= cheat.id%>>">View this cheat</a>
+<%end %>
+
+<a href="/games">View Games</a>

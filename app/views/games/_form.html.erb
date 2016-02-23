@@ -1,0 +1,11 @@
+<%= form_for(@games) do |f| %>
+
+<div class="field"><%= f.label :title%><br>
+  <%= f.text_field :title%></div>
+
+  <div class="field"><%=f.label :console%><br>
+    <%= f.text_field :console%></div>
+
+<br>
+  <div class="actions"><%= f.submit 'Submit', :class => 'btn btn-primary' %></div>
+<% end %>

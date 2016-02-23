@@ -1,0 +1,12 @@
+<h1> Welcome To GamesCheat!</h1>
+<a href="/users/new/">Create Account Here!</a>
+<p><a href="/users">Log In Here!</a></p>
+
+<h2> Check out some cool hacks for these games!</h2>
+<h3><a href="/games/new">Add a new game</a></h3>
+  <% @games.each do |game| %>
+  <p><%=game.title%></p>
+  <p> <%=game.console%></p>
+  <a href="/games/<%= game.id%>>">Edit this game</a>
+  <a href="/cheats/new">Create Cheat</a>
+<%end %>
